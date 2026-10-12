@@ -1,3 +1,141 @@
-h1 {
-    color : red;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    width: 37%;
+    background-image: url("./assets/Sign up form.png");
+    background-image: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.main-content {
+  width: 63%;
+  background-color: #f9fafb;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url("./assets/norse/Norsebold.otf");
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    display : flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20vh;
+}
+
+.logo img {
+    height: 120px;
+}
+
+.logo span {
+    font-family: "Norse";
+    font-size: 6rem;
+    color: white;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 10px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.intro {
+    padding: 120px 40px 50px;
+    font-family: Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    max-width: 850px;
+}
+
+.intro p {
+    margin-bottom: 25px;
+}
+
+.form-section {
+    background-color: white;
+    padding: 20px 40px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 60px;
+}
+
+form div {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="password"]:user-invalid {
+  border-color: red;
+}
+
+button {
+  background-color: #596D48;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 40px;
+  font-weight: bold;
+  cursor: pointer;
+
+  flex-basis: 100%;
+  width: fit-content;
+}
+
+.account-section {
+  padding: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.account-section a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
 }
